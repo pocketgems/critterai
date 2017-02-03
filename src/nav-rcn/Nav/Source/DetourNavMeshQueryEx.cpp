@@ -174,9 +174,10 @@ extern "C"
     EXPORT_API dtStatus dtqClosestPointOnPoly(dtNavMeshQuery* query 
         , dtPolyRef ref
         , const float* pos
-        , float* closest)
+        , float* closest
+		, bool* posOverPoly)
     {
-        return query->closestPointOnPoly(ref, pos, closest);
+        return query->closestPointOnPoly(ref, pos, closest, posOverPoly);
     }
 
 	EXPORT_API dtStatus dtqClosestPointOnPolyBoundary(dtNavMeshQuery* query 
