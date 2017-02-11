@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0AF27321E4E9A9400AE36C7 /* Detour in Resources */ = {isa = PBXBuildFile; fileRef = A0AF272F1E4E9A9400AE36C7 /* Detour */; };
+		A0AF27331E4E9A9400AE36C7 /* Nav in Resources */ = {isa = PBXBuildFile; fileRef = A0AF27301E4E9A9400AE36C7 /* Nav */; };
+		A0AF27341E4E9A9400AE36C7 /* DetourCrowd in Resources */ = {isa = PBXBuildFile; fileRef = A0AF27311E4E9A9400AE36C7 /* DetourCrowd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0AF27261E4E9A7B00AE36C7 /* cai-nav-rcn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cai-nav-rcn.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0AF27291E4E9A7B00AE36C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AF272F1E4E9A9400AE36C7 /* Detour */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Detour; path = "../../../src/nav-rcn/Detour"; sourceTree = "<group>"; };
+		A0AF27301E4E9A9400AE36C7 /* Nav */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Nav; path = "../../../src/nav-rcn/Nav"; sourceTree = "<group>"; };
+		A0AF27311E4E9A9400AE36C7 /* DetourCrowd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DetourCrowd; path = "../../../src/nav-rcn/DetourCrowd"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0AF27231E4E9A7B00AE36C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0AF271D1E4E9A7B00AE36C7 = {
+			isa = PBXGroup;
+			children = (
+				A0AF272F1E4E9A9400AE36C7 /* Detour */,
+				A0AF27301E4E9A9400AE36C7 /* Nav */,
+				A0AF27311E4E9A9400AE36C7 /* DetourCrowd */,
+				A0AF27281E4E9A7B00AE36C7 /* cai-nav-rcn */,
+				A0AF27271E4E9A7B00AE36C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0AF27271E4E9A7B00AE36C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27261E4E9A7B00AE36C7 /* cai-nav-rcn.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0AF27281E4E9A7B00AE36C7 /* cai-nav-rcn */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27291E4E9A7B00AE36C7 /* Info.plist */,
+			);
+			path = "cai-nav-rcn";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0AF27251E4E9A7B00AE36C7 /* cai-nav-rcn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0AF272C1E4E9A7B00AE36C7 /* Build configuration list for PBXNativeTarget "cai-nav-rcn" */;
+			buildPhases = (
+				A0AF27221E4E9A7B00AE36C7 /* Sources */,
+				A0AF27231E4E9A7B00AE36C7 /* Frameworks */,
+				A0AF27241E4E9A7B00AE36C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cai-nav-rcn";
+			productName = "cai-nav-rcn";
+			productReference = A0AF27261E4E9A7B00AE36C7 /* cai-nav-rcn.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0AF271E1E4E9A7B00AE36C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kangyuan Niu";
+				TargetAttributes = {
+					A0AF27251E4E9A7B00AE36C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2MU8W6W46N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0AF27211E4E9A7B00AE36C7 /* Build configuration list for PBXProject "cai-nav-rcn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0AF271D1E4E9A7B00AE36C7;
+			productRefGroup = A0AF27271E4E9A7B00AE36C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0AF27251E4E9A7B00AE36C7 /* cai-nav-rcn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0AF27241E4E9A7B00AE36C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AF27341E4E9A9400AE36C7 /* DetourCrowd in Resources */,
+				A0AF27331E4E9A9400AE36C7 /* Nav in Resources */,
+				A0AF27321E4E9A9400AE36C7 /* Detour in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0AF27221E4E9A7B00AE36C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0AF272A1E4E9A7B00AE36C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A0AF272B1E4E9A7B00AE36C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A0AF272D1E4E9A7B00AE36C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2MU8W6W46N;
+				INFOPLIST_FILE = "cai-nav-rcn/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nav-rcn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A0AF272E1E4E9A7B00AE36C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2MU8W6W46N;
+				INFOPLIST_FILE = "cai-nav-rcn/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nav-rcn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0AF27211E4E9A7B00AE36C7 /* Build configuration list for PBXProject "cai-nav-rcn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AF272A1E4E9A7B00AE36C7 /* Debug */,
+				A0AF272B1E4E9A7B00AE36C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0AF272C1E4E9A7B00AE36C7 /* Build configuration list for PBXNativeTarget "cai-nav-rcn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AF272D1E4E9A7B00AE36C7 /* Debug */,
+				A0AF272E1E4E9A7B00AE36C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0AF271E1E4E9A7B00AE36C7 /* Project object */;
+}

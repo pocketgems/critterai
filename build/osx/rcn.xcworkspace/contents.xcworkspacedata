@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:cai-nav-rcn/cai-nav-rcn.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:cai-nmgen-rcn/cai-nmgen-rcn.xcodeproj">
+   </FileRef>
+</Workspace>
