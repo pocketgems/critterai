@@ -7,15 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0AF27371E4E9AA400AE36C7 /* NMGen in Resources */ = {isa = PBXBuildFile; fileRef = A0AF27351E4E9AA400AE36C7 /* NMGen */; };
-		A0AF27381E4E9AA400AE36C7 /* Recast in Resources */ = {isa = PBXBuildFile; fileRef = A0AF27361E4E9AA400AE36C7 /* Recast */; };
+		A0AF280E1E4EB27C00AE36C7 /* BuildContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27F51E4EB27C00AE36C7 /* BuildContext.cpp */; };
+		A0AF280F1E4EB27C00AE36C7 /* CompactHeightfieldEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27F61E4EB27C00AE36C7 /* CompactHeightfieldEx.cpp */; };
+		A0AF28101E4EB27C00AE36C7 /* ContoursEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27F71E4EB27C00AE36C7 /* ContoursEx.cpp */; };
+		A0AF28111E4EB27C00AE36C7 /* HeightfieldEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27F81E4EB27C00AE36C7 /* HeightfieldEx.cpp */; };
+		A0AF28121E4EB27C00AE36C7 /* HeightfieldLayerSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27F91E4EB27C00AE36C7 /* HeightfieldLayerSet.cpp */; };
+		A0AF28131E4EB27C00AE36C7 /* NMGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27FA1E4EB27C00AE36C7 /* NMGen.cpp */; };
+		A0AF28141E4EB27C00AE36C7 /* PolyMeshDetailEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27FB1E4EB27C00AE36C7 /* PolyMeshDetailEx.cpp */; };
+		A0AF28151E4EB27C00AE36C7 /* PolyMeshEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27FC1E4EB27C00AE36C7 /* PolyMeshEx.cpp */; };
+		A0AF28161E4EB27C00AE36C7 /* Recast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF28031E4EB27C00AE36C7 /* Recast.cpp */; };
+		A0AF28171E4EB27C00AE36C7 /* RecastAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF28041E4EB27C00AE36C7 /* RecastAlloc.cpp */; };
+		A0AF28181E4EB27C00AE36C7 /* RecastArea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF28051E4EB27C00AE36C7 /* RecastArea.cpp */; };
+		A0AF28191E4EB27C00AE36C7 /* RecastAssert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF28061E4EB27C00AE36C7 /* RecastAssert.cpp */; };
+		A0AF281A1E4EB27C00AE36C7 /* RecastContour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF28071E4EB27C00AE36C7 /* RecastContour.cpp */; };
+		A0AF281B1E4EB27C00AE36C7 /* RecastFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF28081E4EB27C00AE36C7 /* RecastFilter.cpp */; };
+		A0AF281C1E4EB27C00AE36C7 /* RecastLayers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF28091E4EB27C00AE36C7 /* RecastLayers.cpp */; };
+		A0AF281D1E4EB27C00AE36C7 /* RecastMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF280A1E4EB27C00AE36C7 /* RecastMesh.cpp */; };
+		A0AF281E1E4EB27C00AE36C7 /* RecastMeshDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF280B1E4EB27C00AE36C7 /* RecastMeshDetail.cpp */; };
+		A0AF281F1E4EB27C00AE36C7 /* RecastRasterization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF280C1E4EB27C00AE36C7 /* RecastRasterization.cpp */; };
+		A0AF28201E4EB27C00AE36C7 /* RecastRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF280D1E4EB27C00AE36C7 /* RecastRegion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A0AF27141E4E9A5B00AE36C7 /* cai-nmgen-rcn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cai-nmgen-rcn.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF27171E4E9A5B00AE36C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0AF27351E4E9AA400AE36C7 /* NMGen */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NMGen; path = "../../../src/nmgen-rcn/NMGen"; sourceTree = "<group>"; };
-		A0AF27361E4E9AA400AE36C7 /* Recast */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Recast; path = "../../../src/nmgen-rcn/Recast"; sourceTree = "<group>"; };
+		A0AF27F31E4EB27C00AE36C7 /* NMGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMGen.h; sourceTree = "<group>"; };
+		A0AF27F51E4EB27C00AE36C7 /* BuildContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildContext.cpp; sourceTree = "<group>"; };
+		A0AF27F61E4EB27C00AE36C7 /* CompactHeightfieldEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompactHeightfieldEx.cpp; sourceTree = "<group>"; };
+		A0AF27F71E4EB27C00AE36C7 /* ContoursEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ContoursEx.cpp; sourceTree = "<group>"; };
+		A0AF27F81E4EB27C00AE36C7 /* HeightfieldEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeightfieldEx.cpp; sourceTree = "<group>"; };
+		A0AF27F91E4EB27C00AE36C7 /* HeightfieldLayerSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeightfieldLayerSet.cpp; sourceTree = "<group>"; };
+		A0AF27FA1E4EB27C00AE36C7 /* NMGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NMGen.cpp; sourceTree = "<group>"; };
+		A0AF27FB1E4EB27C00AE36C7 /* PolyMeshDetailEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PolyMeshDetailEx.cpp; sourceTree = "<group>"; };
+		A0AF27FC1E4EB27C00AE36C7 /* PolyMeshEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PolyMeshEx.cpp; sourceTree = "<group>"; };
+		A0AF27FF1E4EB27C00AE36C7 /* Recast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recast.h; sourceTree = "<group>"; };
+		A0AF28001E4EB27C00AE36C7 /* RecastAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecastAlloc.h; sourceTree = "<group>"; };
+		A0AF28011E4EB27C00AE36C7 /* RecastAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecastAssert.h; sourceTree = "<group>"; };
+		A0AF28031E4EB27C00AE36C7 /* Recast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Recast.cpp; sourceTree = "<group>"; };
+		A0AF28041E4EB27C00AE36C7 /* RecastAlloc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastAlloc.cpp; sourceTree = "<group>"; };
+		A0AF28051E4EB27C00AE36C7 /* RecastArea.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastArea.cpp; sourceTree = "<group>"; };
+		A0AF28061E4EB27C00AE36C7 /* RecastAssert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastAssert.cpp; sourceTree = "<group>"; };
+		A0AF28071E4EB27C00AE36C7 /* RecastContour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastContour.cpp; sourceTree = "<group>"; };
+		A0AF28081E4EB27C00AE36C7 /* RecastFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastFilter.cpp; sourceTree = "<group>"; };
+		A0AF28091E4EB27C00AE36C7 /* RecastLayers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastLayers.cpp; sourceTree = "<group>"; };
+		A0AF280A1E4EB27C00AE36C7 /* RecastMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastMesh.cpp; sourceTree = "<group>"; };
+		A0AF280B1E4EB27C00AE36C7 /* RecastMeshDetail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastMeshDetail.cpp; sourceTree = "<group>"; };
+		A0AF280C1E4EB27C00AE36C7 /* RecastRasterization.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastRasterization.cpp; sourceTree = "<group>"; };
+		A0AF280D1E4EB27C00AE36C7 /* RecastRegion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RecastRegion.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,8 +70,8 @@
 		A0AF270B1E4E9A5B00AE36C7 = {
 			isa = PBXGroup;
 			children = (
-				A0AF27351E4E9AA400AE36C7 /* NMGen */,
-				A0AF27361E4E9AA400AE36C7 /* Recast */,
+				A0AF27F11E4EB27C00AE36C7 /* NMGen */,
+				A0AF27FD1E4EB27C00AE36C7 /* Recast */,
 				A0AF27161E4E9A5B00AE36C7 /* cai-nmgen-rcn */,
 				A0AF27151E4E9A5B00AE36C7 /* Products */,
 			);
@@ -53,6 +91,77 @@
 				A0AF27171E4E9A5B00AE36C7 /* Info.plist */,
 			);
 			path = "cai-nmgen-rcn";
+			sourceTree = "<group>";
+		};
+		A0AF27F11E4EB27C00AE36C7 /* NMGen */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27F21E4EB27C00AE36C7 /* Include */,
+				A0AF27F41E4EB27C00AE36C7 /* Source */,
+			);
+			name = NMGen;
+			path = "../../../src/nmgen-rcn/NMGen";
+			sourceTree = "<group>";
+		};
+		A0AF27F21E4EB27C00AE36C7 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27F31E4EB27C00AE36C7 /* NMGen.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		A0AF27F41E4EB27C00AE36C7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27F51E4EB27C00AE36C7 /* BuildContext.cpp */,
+				A0AF27F61E4EB27C00AE36C7 /* CompactHeightfieldEx.cpp */,
+				A0AF27F71E4EB27C00AE36C7 /* ContoursEx.cpp */,
+				A0AF27F81E4EB27C00AE36C7 /* HeightfieldEx.cpp */,
+				A0AF27F91E4EB27C00AE36C7 /* HeightfieldLayerSet.cpp */,
+				A0AF27FA1E4EB27C00AE36C7 /* NMGen.cpp */,
+				A0AF27FB1E4EB27C00AE36C7 /* PolyMeshDetailEx.cpp */,
+				A0AF27FC1E4EB27C00AE36C7 /* PolyMeshEx.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A0AF27FD1E4EB27C00AE36C7 /* Recast */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27FE1E4EB27C00AE36C7 /* Include */,
+				A0AF28021E4EB27C00AE36C7 /* Source */,
+			);
+			name = Recast;
+			path = "../../../src/nmgen-rcn/Recast";
+			sourceTree = "<group>";
+		};
+		A0AF27FE1E4EB27C00AE36C7 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27FF1E4EB27C00AE36C7 /* Recast.h */,
+				A0AF28001E4EB27C00AE36C7 /* RecastAlloc.h */,
+				A0AF28011E4EB27C00AE36C7 /* RecastAssert.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		A0AF28021E4EB27C00AE36C7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF28031E4EB27C00AE36C7 /* Recast.cpp */,
+				A0AF28041E4EB27C00AE36C7 /* RecastAlloc.cpp */,
+				A0AF28051E4EB27C00AE36C7 /* RecastArea.cpp */,
+				A0AF28061E4EB27C00AE36C7 /* RecastAssert.cpp */,
+				A0AF28071E4EB27C00AE36C7 /* RecastContour.cpp */,
+				A0AF28081E4EB27C00AE36C7 /* RecastFilter.cpp */,
+				A0AF28091E4EB27C00AE36C7 /* RecastLayers.cpp */,
+				A0AF280A1E4EB27C00AE36C7 /* RecastMesh.cpp */,
+				A0AF280B1E4EB27C00AE36C7 /* RecastMeshDetail.cpp */,
+				A0AF280C1E4EB27C00AE36C7 /* RecastRasterization.cpp */,
+				A0AF280D1E4EB27C00AE36C7 /* RecastRegion.cpp */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,7 +195,7 @@
 				TargetAttributes = {
 					A0AF27131E4E9A5B00AE36C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2MU8W6W46N;
+						DevelopmentTeam = M9TQL74WZT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -113,8 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0AF27381E4E9AA400AE36C7 /* Recast in Resources */,
-				A0AF27371E4E9AA400AE36C7 /* NMGen in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +232,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AF28111E4EB27C00AE36C7 /* HeightfieldEx.cpp in Sources */,
+				A0AF28171E4EB27C00AE36C7 /* RecastAlloc.cpp in Sources */,
+				A0AF281C1E4EB27C00AE36C7 /* RecastLayers.cpp in Sources */,
+				A0AF28201E4EB27C00AE36C7 /* RecastRegion.cpp in Sources */,
+				A0AF281E1E4EB27C00AE36C7 /* RecastMeshDetail.cpp in Sources */,
+				A0AF281A1E4EB27C00AE36C7 /* RecastContour.cpp in Sources */,
+				A0AF280F1E4EB27C00AE36C7 /* CompactHeightfieldEx.cpp in Sources */,
+				A0AF28121E4EB27C00AE36C7 /* HeightfieldLayerSet.cpp in Sources */,
+				A0AF28141E4EB27C00AE36C7 /* PolyMeshDetailEx.cpp in Sources */,
+				A0AF28181E4EB27C00AE36C7 /* RecastArea.cpp in Sources */,
+				A0AF28101E4EB27C00AE36C7 /* ContoursEx.cpp in Sources */,
+				A0AF28151E4EB27C00AE36C7 /* PolyMeshEx.cpp in Sources */,
+				A0AF280E1E4EB27C00AE36C7 /* BuildContext.cpp in Sources */,
+				A0AF28191E4EB27C00AE36C7 /* RecastAssert.cpp in Sources */,
+				A0AF281F1E4EB27C00AE36C7 /* RecastRasterization.cpp in Sources */,
+				A0AF281B1E4EB27C00AE36C7 /* RecastFilter.cpp in Sources */,
+				A0AF28161E4EB27C00AE36C7 /* Recast.cpp in Sources */,
+				A0AF281D1E4EB27C00AE36C7 /* RecastMesh.cpp in Sources */,
+				A0AF28131E4EB27C00AE36C7 /* NMGen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,12 +350,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2MU8W6W46N;
+				DEVELOPMENT_TEAM = M9TQL74WZT;
 				INFOPLIST_FILE = "cai-nmgen-rcn/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nmgen-rcn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -241,12 +367,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2MU8W6W46N;
+				DEVELOPMENT_TEAM = M9TQL74WZT;
 				INFOPLIST_FILE = "cai-nmgen-rcn/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nmgen-rcn";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -271,6 +397,7 @@
 				A0AF271C1E4E9A5B00AE36C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
