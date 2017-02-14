@@ -24,11 +24,6 @@ using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 using org.critterai.interop;
 using org.critterai.nmgen.rcn;
-#if NUNITY
-using Vector3 = org.critterai.Vector3;
-#else
-using Vector3 = UnityEngine.Vector3;
-#endif
 
 namespace org.critterai.nmgen
 {

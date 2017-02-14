@@ -23,11 +23,6 @@ using System;
 using System.Runtime.InteropServices;
 using org.critterai.interop;
 using org.critterai.nmgen.rcn;
-#if NUNITY
-using Vector3 = org.critterai.Vector3;
-#else
-using Vector3 = UnityEngine.Vector3;
-#endif
 
 // Unity is improperly indicating that mSpan is unused.
 #pragma warning disable 414

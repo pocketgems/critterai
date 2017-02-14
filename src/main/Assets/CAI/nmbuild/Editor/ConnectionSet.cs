@@ -22,11 +22,6 @@
 using System.Collections.Generic;
 using org.critterai.nav;
 using org.critterai.geom;
-#if NUNITY
-using Vector3 = org.critterai.Vector3;
-#else
-using Vector3 = UnityEngine.Vector3;
-#endif
 
 namespace org.critterai.nmbuild
 {

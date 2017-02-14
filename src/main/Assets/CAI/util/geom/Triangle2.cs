@@ -19,11 +19,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#if NUNITY
-using Vector2 = org.critterai.Vector2;
-#else
-using Vector2 = UnityEngine.Vector2;
-#endif
 
 namespace org.critterai.geom
 {

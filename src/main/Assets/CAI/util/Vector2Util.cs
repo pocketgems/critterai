@@ -20,11 +20,6 @@
  * THE SOFTWARE.
  */
 using System;
-#if NUNITY
-using Vector2 = org.critterai.Vector2;
-#else
-using Vector2 = UnityEngine.Vector2;
-#endif
 
 namespace org.critterai
 {

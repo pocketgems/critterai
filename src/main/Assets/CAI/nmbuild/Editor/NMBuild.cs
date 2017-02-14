@@ -23,11 +23,6 @@ using org.critterai.nmgen;
 using org.critterai.nav;
 using System.Collections.Generic;
 using Math = System.Math;
-#if NUNITY
-using Vector3 = org.critterai.Vector3;
-#else
-using Vector3 = UnityEngine.Vector3;
-#endif
 
 namespace org.critterai.nmbuild
 {

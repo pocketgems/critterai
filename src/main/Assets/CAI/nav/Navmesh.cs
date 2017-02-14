@@ -24,11 +24,6 @@ using org.critterai.nav.rcn;
 using org.critterai.interop;
 using System.Runtime.Serialization;
 using System.Runtime.InteropServices;
-#if NUNITY
-using Vector3 = org.critterai.Vector3;
-#else
-using Vector3 = UnityEngine.Vector3;
-#endif
 
 namespace org.critterai.nav
 {
