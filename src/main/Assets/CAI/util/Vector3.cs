@@ -21,6 +21,7 @@
  */
 #if NUNITY
 
+using System;
 using System.Runtime.InteropServices;
 
 namespace org.critterai
@@ -56,6 +57,12 @@ namespace org.critterai
         /// The z-value of teh vector (x, y, z)
         /// </summary>
         public float z;
+
+        public float magnitude {
+            get {
+                return Convert.ToSingle(Math.Sqrt(x * x + y * y + z * z));
+            }
+        }
 
         /// <summary>
         /// Constructor.
