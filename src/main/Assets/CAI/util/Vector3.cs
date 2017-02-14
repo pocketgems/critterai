@@ -114,6 +114,14 @@ namespace org.critterai
             return new Vector3(v.x + u.x, v.y + u.y, v.z + u.z);
         }
 
+        public static Vector3 operator*(Vector3 v, float s) {
+            return new Vector3(v.x * s, v.y * s, v.z * s);
+        }
+
+        public static Vector3 operator*(float s, Vector3 v) {
+            return new Vector3(s * v.x, s * v.y, s * v.z);
+        }
+
         /// <summary>
         /// The vector hash code.
         /// </summary>

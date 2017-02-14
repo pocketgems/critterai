@@ -58,6 +58,18 @@ namespace org.critterai
         }
 
         /// <summary>
+        /// Returns the <a href="http://en.wikipedia.org/wiki/Cross_Product" target="_blank">
+        /// cross product</a> of the specified vectors. (u x v)
+        /// </summary>
+        /// <param name="u">Vector u</param>
+        /// <param name="v">Vector v</param>
+        /// <returns>The cross product of the specified vectors.</returns>
+        public static float Cross(Vector2 u, Vector2 v)
+        {
+            return u.x * v.y - u.y * v.x;
+        }
+
+        /// <summary>
         /// Derives the normalized direction vector from point A to point B. (Costly method!)
         /// </summary>
         /// <param name="a">The starting point A.</param>
