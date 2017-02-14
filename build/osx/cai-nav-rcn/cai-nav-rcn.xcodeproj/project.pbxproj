@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0AF27321E4E9A9400AE36C7 /* Detour in Resources */ = {isa = PBXBuildFile; fileRef = A0AF272F1E4E9A9400AE36C7 /* Detour */; };
+		A0AF27331E4E9A9400AE36C7 /* Nav in Resources */ = {isa = PBXBuildFile; fileRef = A0AF27301E4E9A9400AE36C7 /* Nav */; };
+		A0AF27341E4E9A9400AE36C7 /* DetourCrowd in Resources */ = {isa = PBXBuildFile; fileRef = A0AF27311E4E9A9400AE36C7 /* DetourCrowd */; };
+		A0AF27DD1E4EB23D00AE36C7 /* DetourAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27BB1E4EB23D00AE36C7 /* DetourAlloc.cpp */; };
+		A0AF27DE1E4EB23D00AE36C7 /* DetourAssert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27BC1E4EB23D00AE36C7 /* DetourAssert.cpp */; };
+		A0AF27DF1E4EB23D00AE36C7 /* DetourCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27BD1E4EB23D00AE36C7 /* DetourCommon.cpp */; };
+		A0AF27E01E4EB23D00AE36C7 /* DetourNavMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27BE1E4EB23D00AE36C7 /* DetourNavMesh.cpp */; };
+		A0AF27E11E4EB23D00AE36C7 /* DetourNavMeshBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27BF1E4EB23D00AE36C7 /* DetourNavMeshBuilder.cpp */; };
+		A0AF27E21E4EB23D00AE36C7 /* DetourNavMeshQuery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27C01E4EB23D00AE36C7 /* DetourNavMeshQuery.cpp */; };
+		A0AF27E31E4EB23D00AE36C7 /* DetourNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27C11E4EB23D00AE36C7 /* DetourNode.cpp */; };
+		A0AF27E41E4EB23D00AE36C7 /* DetourCrowdEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27C71E4EB23D00AE36C7 /* DetourCrowdEx.cpp */; };
+		A0AF27E51E4EB23D00AE36C7 /* DetourNavMeshBuildEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27C81E4EB23D00AE36C7 /* DetourNavMeshBuildEx.cpp */; };
+		A0AF27E61E4EB23D00AE36C7 /* DetourNavmeshEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27C91E4EB23D00AE36C7 /* DetourNavmeshEx.cpp */; };
+		A0AF27E71E4EB23D00AE36C7 /* DetourNavMeshQueryEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27CA1E4EB23D00AE36C7 /* DetourNavMeshQueryEx.cpp */; };
+		A0AF27E81E4EB23D00AE36C7 /* DetourPathCorridorEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27CB1E4EB23D00AE36C7 /* DetourPathCorridorEx.cpp */; };
+		A0AF27E91E4EB23D00AE36C7 /* DetourQueryFilterEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27CC1E4EB23D00AE36C7 /* DetourQueryFilterEx.cpp */; };
+		A0AF27EA1E4EB23D00AE36C7 /* NavValidation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27CD1E4EB23D00AE36C7 /* NavValidation.cpp */; };
+		A0AF27EB1E4EB23D00AE36C7 /* DetourCrowd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27D71E4EB23D00AE36C7 /* DetourCrowd.cpp */; };
+		A0AF27EC1E4EB23D00AE36C7 /* DetourLocalBoundary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27D81E4EB23D00AE36C7 /* DetourLocalBoundary.cpp */; };
+		A0AF27ED1E4EB23D00AE36C7 /* DetourObstacleAvoidance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27D91E4EB23D00AE36C7 /* DetourObstacleAvoidance.cpp */; };
+		A0AF27EE1E4EB23D00AE36C7 /* DetourPathCorridor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27DA1E4EB23D00AE36C7 /* DetourPathCorridor.cpp */; };
+		A0AF27EF1E4EB23D00AE36C7 /* DetourPathQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27DB1E4EB23D00AE36C7 /* DetourPathQueue.cpp */; };
+		A0AF27F01E4EB23D00AE36C7 /* DetourProximityGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27DC1E4EB23D00AE36C7 /* DetourProximityGrid.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0AF27261E4E9A7B00AE36C7 /* cai-nav-rcn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cai-nav-rcn.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0AF27291E4E9A7B00AE36C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AF272F1E4E9A9400AE36C7 /* Detour */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Detour; path = "/Users/kangyuanniu/critterai/src/nav-rcn/Detour"; sourceTree = "<absolute>"; };
+		A0AF27301E4E9A9400AE36C7 /* Nav */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Nav; path = "/Users/kangyuanniu/critterai/src/nav-rcn/Nav"; sourceTree = "<absolute>"; };
+		A0AF27311E4E9A9400AE36C7 /* DetourCrowd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DetourCrowd; path = "/Users/kangyuanniu/critterai/src/nav-rcn/DetourCrowd"; sourceTree = "<absolute>"; };
+		A0AF27B11E4EB23D00AE36C7 /* DetourAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourAlloc.h; sourceTree = "<group>"; };
+		A0AF27B21E4EB23D00AE36C7 /* DetourAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourAssert.h; sourceTree = "<group>"; };
+		A0AF27B31E4EB23D00AE36C7 /* DetourCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourCommon.h; sourceTree = "<group>"; };
+		A0AF27B41E4EB23D00AE36C7 /* DetourMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourMath.h; sourceTree = "<group>"; };
+		A0AF27B51E4EB23D00AE36C7 /* DetourNavMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMesh.h; sourceTree = "<group>"; };
+		A0AF27B61E4EB23D00AE36C7 /* DetourNavMeshBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshBuilder.h; sourceTree = "<group>"; };
+		A0AF27B71E4EB23D00AE36C7 /* DetourNavMeshQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshQuery.h; sourceTree = "<group>"; };
+		A0AF27B81E4EB23D00AE36C7 /* DetourNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNode.h; sourceTree = "<group>"; };
+		A0AF27B91E4EB23D00AE36C7 /* DetourStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourStatus.h; sourceTree = "<group>"; };
+		A0AF27BB1E4EB23D00AE36C7 /* DetourAlloc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourAlloc.cpp; sourceTree = "<group>"; };
+		A0AF27BC1E4EB23D00AE36C7 /* DetourAssert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourAssert.cpp; sourceTree = "<group>"; };
+		A0AF27BD1E4EB23D00AE36C7 /* DetourCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourCommon.cpp; sourceTree = "<group>"; };
+		A0AF27BE1E4EB23D00AE36C7 /* DetourNavMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMesh.cpp; sourceTree = "<group>"; };
+		A0AF27BF1E4EB23D00AE36C7 /* DetourNavMeshBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshBuilder.cpp; sourceTree = "<group>"; };
+		A0AF27C01E4EB23D00AE36C7 /* DetourNavMeshQuery.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshQuery.cpp; sourceTree = "<group>"; };
+		A0AF27C11E4EB23D00AE36C7 /* DetourNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNode.cpp; sourceTree = "<group>"; };
+		A0AF27C41E4EB23D00AE36C7 /* DetourEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourEx.h; sourceTree = "<group>"; };
+		A0AF27C51E4EB23D00AE36C7 /* DetourNavMeshEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshEx.h; sourceTree = "<group>"; };
+		A0AF27C71E4EB23D00AE36C7 /* DetourCrowdEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourCrowdEx.cpp; sourceTree = "<group>"; };
+		A0AF27C81E4EB23D00AE36C7 /* DetourNavMeshBuildEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshBuildEx.cpp; sourceTree = "<group>"; };
+		A0AF27C91E4EB23D00AE36C7 /* DetourNavmeshEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavmeshEx.cpp; sourceTree = "<group>"; };
+		A0AF27CA1E4EB23D00AE36C7 /* DetourNavMeshQueryEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshQueryEx.cpp; sourceTree = "<group>"; };
+		A0AF27CB1E4EB23D00AE36C7 /* DetourPathCorridorEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourPathCorridorEx.cpp; sourceTree = "<group>"; };
+		A0AF27CC1E4EB23D00AE36C7 /* DetourQueryFilterEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourQueryFilterEx.cpp; sourceTree = "<group>"; };
+		A0AF27CD1E4EB23D00AE36C7 /* NavValidation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NavValidation.cpp; sourceTree = "<group>"; };
+		A0AF27D01E4EB23D00AE36C7 /* DetourCrowd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourCrowd.h; sourceTree = "<group>"; };
+		A0AF27D11E4EB23D00AE36C7 /* DetourLocalBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourLocalBoundary.h; sourceTree = "<group>"; };
+		A0AF27D21E4EB23D00AE36C7 /* DetourObstacleAvoidance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourObstacleAvoidance.h; sourceTree = "<group>"; };
+		A0AF27D31E4EB23D00AE36C7 /* DetourPathCorridor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourPathCorridor.h; sourceTree = "<group>"; };
+		A0AF27D41E4EB23D00AE36C7 /* DetourPathQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourPathQueue.h; sourceTree = "<group>"; };
+		A0AF27D51E4EB23D00AE36C7 /* DetourProximityGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourProximityGrid.h; sourceTree = "<group>"; };
+		A0AF27D71E4EB23D00AE36C7 /* DetourCrowd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourCrowd.cpp; sourceTree = "<group>"; };
+		A0AF27D81E4EB23D00AE36C7 /* DetourLocalBoundary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourLocalBoundary.cpp; sourceTree = "<group>"; };
+		A0AF27D91E4EB23D00AE36C7 /* DetourObstacleAvoidance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourObstacleAvoidance.cpp; sourceTree = "<group>"; };
+		A0AF27DA1E4EB23D00AE36C7 /* DetourPathCorridor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourPathCorridor.cpp; sourceTree = "<group>"; };
+		A0AF27DB1E4EB23D00AE36C7 /* DetourPathQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourPathQueue.cpp; sourceTree = "<group>"; };
+		A0AF27DC1E4EB23D00AE36C7 /* DetourProximityGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourProximityGrid.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0AF27231E4E9A7B00AE36C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0AF271D1E4E9A7B00AE36C7 = {
+			isa = PBXGroup;
+			children = (
+				A0AF27AF1E4EB23D00AE36C7 /* Detour */,
+				A0AF27C21E4EB23D00AE36C7 /* Nav */,
+				A0AF27CE1E4EB23D00AE36C7 /* DetourCrowd */,
+				A0AF27281E4E9A7B00AE36C7 /* cai-nav-rcn */,
+				A0AF27271E4E9A7B00AE36C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0AF27271E4E9A7B00AE36C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27261E4E9A7B00AE36C7 /* cai-nav-rcn.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0AF27281E4E9A7B00AE36C7 /* cai-nav-rcn */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27291E4E9A7B00AE36C7 /* Info.plist */,
+			);
+			path = "cai-nav-rcn";
+			sourceTree = "<group>";
+		};
+		A0AF27AF1E4EB23D00AE36C7 /* Detour */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27B01E4EB23D00AE36C7 /* Include */,
+				A0AF27BA1E4EB23D00AE36C7 /* Source */,
+			);
+			name = Detour;
+			path = "../../../src/nav-rcn/Detour";
+			sourceTree = "<group>";
+		};
+		A0AF27B01E4EB23D00AE36C7 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27B11E4EB23D00AE36C7 /* DetourAlloc.h */,
+				A0AF27B21E4EB23D00AE36C7 /* DetourAssert.h */,
+				A0AF27B31E4EB23D00AE36C7 /* DetourCommon.h */,
+				A0AF27B41E4EB23D00AE36C7 /* DetourMath.h */,
+				A0AF27B51E4EB23D00AE36C7 /* DetourNavMesh.h */,
+				A0AF27B61E4EB23D00AE36C7 /* DetourNavMeshBuilder.h */,
+				A0AF27B71E4EB23D00AE36C7 /* DetourNavMeshQuery.h */,
+				A0AF27B81E4EB23D00AE36C7 /* DetourNode.h */,
+				A0AF27B91E4EB23D00AE36C7 /* DetourStatus.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		A0AF27BA1E4EB23D00AE36C7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27BB1E4EB23D00AE36C7 /* DetourAlloc.cpp */,
+				A0AF27BC1E4EB23D00AE36C7 /* DetourAssert.cpp */,
+				A0AF27BD1E4EB23D00AE36C7 /* DetourCommon.cpp */,
+				A0AF27BE1E4EB23D00AE36C7 /* DetourNavMesh.cpp */,
+				A0AF27BF1E4EB23D00AE36C7 /* DetourNavMeshBuilder.cpp */,
+				A0AF27C01E4EB23D00AE36C7 /* DetourNavMeshQuery.cpp */,
+				A0AF27C11E4EB23D00AE36C7 /* DetourNode.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A0AF27C21E4EB23D00AE36C7 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27C31E4EB23D00AE36C7 /* Include */,
+				A0AF27C61E4EB23D00AE36C7 /* Source */,
+			);
+			name = Nav;
+			path = "../../../src/nav-rcn/Nav";
+			sourceTree = "<group>";
+		};
+		A0AF27C31E4EB23D00AE36C7 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27C41E4EB23D00AE36C7 /* DetourEx.h */,
+				A0AF27C51E4EB23D00AE36C7 /* DetourNavMeshEx.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		A0AF27C61E4EB23D00AE36C7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27C71E4EB23D00AE36C7 /* DetourCrowdEx.cpp */,
+				A0AF27C81E4EB23D00AE36C7 /* DetourNavMeshBuildEx.cpp */,
+				A0AF27C91E4EB23D00AE36C7 /* DetourNavmeshEx.cpp */,
+				A0AF27CA1E4EB23D00AE36C7 /* DetourNavMeshQueryEx.cpp */,
+				A0AF27CB1E4EB23D00AE36C7 /* DetourPathCorridorEx.cpp */,
+				A0AF27CC1E4EB23D00AE36C7 /* DetourQueryFilterEx.cpp */,
+				A0AF27CD1E4EB23D00AE36C7 /* NavValidation.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A0AF27CE1E4EB23D00AE36C7 /* DetourCrowd */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27CF1E4EB23D00AE36C7 /* Include */,
+				A0AF27D61E4EB23D00AE36C7 /* Source */,
+			);
+			name = DetourCrowd;
+			path = "../../../src/nav-rcn/DetourCrowd";
+			sourceTree = "<group>";
+		};
+		A0AF27CF1E4EB23D00AE36C7 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27D01E4EB23D00AE36C7 /* DetourCrowd.h */,
+				A0AF27D11E4EB23D00AE36C7 /* DetourLocalBoundary.h */,
+				A0AF27D21E4EB23D00AE36C7 /* DetourObstacleAvoidance.h */,
+				A0AF27D31E4EB23D00AE36C7 /* DetourPathCorridor.h */,
+				A0AF27D41E4EB23D00AE36C7 /* DetourPathQueue.h */,
+				A0AF27D51E4EB23D00AE36C7 /* DetourProximityGrid.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		A0AF27D61E4EB23D00AE36C7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF27D71E4EB23D00AE36C7 /* DetourCrowd.cpp */,
+				A0AF27D81E4EB23D00AE36C7 /* DetourLocalBoundary.cpp */,
+				A0AF27D91E4EB23D00AE36C7 /* DetourObstacleAvoidance.cpp */,
+				A0AF27DA1E4EB23D00AE36C7 /* DetourPathCorridor.cpp */,
+				A0AF27DB1E4EB23D00AE36C7 /* DetourPathQueue.cpp */,
+				A0AF27DC1E4EB23D00AE36C7 /* DetourProximityGrid.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0AF27251E4E9A7B00AE36C7 /* cai-nav-rcn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0AF272C1E4E9A7B00AE36C7 /* Build configuration list for PBXNativeTarget "cai-nav-rcn" */;
+			buildPhases = (
+				A0AF27221E4E9A7B00AE36C7 /* Sources */,
+				A0AF27231E4E9A7B00AE36C7 /* Frameworks */,
+				A0AF27241E4E9A7B00AE36C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cai-nav-rcn";
+			productName = "cai-nav-rcn";
+			productReference = A0AF27261E4E9A7B00AE36C7 /* cai-nav-rcn.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0AF271E1E4E9A7B00AE36C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kangyuan Niu";
+				TargetAttributes = {
+					A0AF27251E4E9A7B00AE36C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = M9TQL74WZT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0AF27211E4E9A7B00AE36C7 /* Build configuration list for PBXProject "cai-nav-rcn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0AF271D1E4E9A7B00AE36C7;
+			productRefGroup = A0AF27271E4E9A7B00AE36C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0AF27251E4E9A7B00AE36C7 /* cai-nav-rcn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0AF27241E4E9A7B00AE36C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AF27341E4E9A9400AE36C7 /* DetourCrowd in Resources */,
+				A0AF27331E4E9A9400AE36C7 /* Nav in Resources */,
+				A0AF27321E4E9A9400AE36C7 /* Detour in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0AF27221E4E9A7B00AE36C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0AF27EB1E4EB23D00AE36C7 /* DetourCrowd.cpp in Sources */,
+				A0AF27EA1E4EB23D00AE36C7 /* NavValidation.cpp in Sources */,
+				A0AF27E51E4EB23D00AE36C7 /* DetourNavMeshBuildEx.cpp in Sources */,
+				A0AF27E91E4EB23D00AE36C7 /* DetourQueryFilterEx.cpp in Sources */,
+				A0AF27DF1E4EB23D00AE36C7 /* DetourCommon.cpp in Sources */,
+				A0AF27E61E4EB23D00AE36C7 /* DetourNavmeshEx.cpp in Sources */,
+				A0AF27F01E4EB23D00AE36C7 /* DetourProximityGrid.cpp in Sources */,
+				A0AF27E41E4EB23D00AE36C7 /* DetourCrowdEx.cpp in Sources */,
+				A0AF27EE1E4EB23D00AE36C7 /* DetourPathCorridor.cpp in Sources */,
+				A0AF27DE1E4EB23D00AE36C7 /* DetourAssert.cpp in Sources */,
+				A0AF27E21E4EB23D00AE36C7 /* DetourNavMeshQuery.cpp in Sources */,
+				A0AF27ED1E4EB23D00AE36C7 /* DetourObstacleAvoidance.cpp in Sources */,
+				A0AF27DD1E4EB23D00AE36C7 /* DetourAlloc.cpp in Sources */,
+				A0AF27EC1E4EB23D00AE36C7 /* DetourLocalBoundary.cpp in Sources */,
+				A0AF27EF1E4EB23D00AE36C7 /* DetourPathQueue.cpp in Sources */,
+				A0AF27E71E4EB23D00AE36C7 /* DetourNavMeshQueryEx.cpp in Sources */,
+				A0AF27E01E4EB23D00AE36C7 /* DetourNavMesh.cpp in Sources */,
+				A0AF27E31E4EB23D00AE36C7 /* DetourNode.cpp in Sources */,
+				A0AF27E81E4EB23D00AE36C7 /* DetourPathCorridorEx.cpp in Sources */,
+				A0AF27E11E4EB23D00AE36C7 /* DetourNavMeshBuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0AF272A1E4E9A7B00AE36C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A0AF272B1E4E9A7B00AE36C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A0AF272D1E4E9A7B00AE36C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M9TQL74WZT;
+				INFOPLIST_FILE = "cai-nav-rcn/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nav-rcn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A0AF272E1E4E9A7B00AE36C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M9TQL74WZT;
+				INFOPLIST_FILE = "cai-nav-rcn/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nav-rcn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0AF27211E4E9A7B00AE36C7 /* Build configuration list for PBXProject "cai-nav-rcn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AF272A1E4E9A7B00AE36C7 /* Debug */,
+				A0AF272B1E4E9A7B00AE36C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0AF272C1E4E9A7B00AE36C7 /* Build configuration list for PBXNativeTarget "cai-nav-rcn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AF272D1E4E9A7B00AE36C7 /* Debug */,
+				A0AF272E1E4E9A7B00AE36C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0AF271E1E4E9A7B00AE36C7 /* Project object */;
+}
