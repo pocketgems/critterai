@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0AF27321E4E9A9400AE36C7 /* Detour in Resources */ = {isa = PBXBuildFile; fileRef = A0AF272F1E4E9A9400AE36C7 /* Detour */; };
-		A0AF27331E4E9A9400AE36C7 /* Nav in Resources */ = {isa = PBXBuildFile; fileRef = A0AF27301E4E9A9400AE36C7 /* Nav */; };
-		A0AF27341E4E9A9400AE36C7 /* DetourCrowd in Resources */ = {isa = PBXBuildFile; fileRef = A0AF27311E4E9A9400AE36C7 /* DetourCrowd */; };
 		A0AF27DD1E4EB23D00AE36C7 /* DetourAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27BB1E4EB23D00AE36C7 /* DetourAlloc.cpp */; };
 		A0AF27DE1E4EB23D00AE36C7 /* DetourAssert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27BC1E4EB23D00AE36C7 /* DetourAssert.cpp */; };
 		A0AF27DF1E4EB23D00AE36C7 /* DetourCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0AF27BD1E4EB23D00AE36C7 /* DetourCommon.cpp */; };
@@ -35,9 +32,6 @@
 /* Begin PBXFileReference section */
 		A0AF27261E4E9A7B00AE36C7 /* cai-nav-rcn.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cai-nav-rcn.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AF27291E4E9A7B00AE36C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0AF272F1E4E9A9400AE36C7 /* Detour */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Detour; path = "/Users/kangyuanniu/critterai/src/nav-rcn/Detour"; sourceTree = "<absolute>"; };
-		A0AF27301E4E9A9400AE36C7 /* Nav */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Nav; path = "/Users/kangyuanniu/critterai/src/nav-rcn/Nav"; sourceTree = "<absolute>"; };
-		A0AF27311E4E9A9400AE36C7 /* DetourCrowd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DetourCrowd; path = "/Users/kangyuanniu/critterai/src/nav-rcn/DetourCrowd"; sourceTree = "<absolute>"; };
 		A0AF27B11E4EB23D00AE36C7 /* DetourAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourAlloc.h; sourceTree = "<group>"; };
 		A0AF27B21E4EB23D00AE36C7 /* DetourAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourAssert.h; sourceTree = "<group>"; };
 		A0AF27B31E4EB23D00AE36C7 /* DetourCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourCommon.h; sourceTree = "<group>"; };
@@ -255,7 +249,7 @@
 				TargetAttributes = {
 					A0AF27251E4E9A7B00AE36C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = M9TQL74WZT;
+						DevelopmentTeam = RHAQANTQN5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -282,9 +276,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0AF27341E4E9A9400AE36C7 /* DetourCrowd in Resources */,
-				A0AF27331E4E9A9400AE36C7 /* Nav in Resources */,
-				A0AF27321E4E9A9400AE36C7 /* Detour in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +405,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = M9TQL74WZT;
+				DEVELOPMENT_TEAM = RHAQANTQN5;
 				INFOPLIST_FILE = "cai-nav-rcn/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nav-rcn";
@@ -431,7 +422,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = M9TQL74WZT;
+				DEVELOPMENT_TEAM = RHAQANTQN5;
 				INFOPLIST_FILE = "cai-nav-rcn/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nav-rcn";
