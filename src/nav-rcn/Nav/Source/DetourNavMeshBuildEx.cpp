@@ -42,7 +42,7 @@ struct rcnNavMeshCreateParams
 
 struct rcnNavMeshSetHeader
 {
-    long version;
+    int64_t version;
     int tileCount;
     dtNavMeshParams params;
 };
