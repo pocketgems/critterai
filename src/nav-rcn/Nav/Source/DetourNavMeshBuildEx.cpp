@@ -23,6 +23,7 @@
 #include "DetourNavMeshBuilder.h"
 #include "DetourCommon.h"
 #include "DetourNavMeshEx.h"
+#include <stdint.h>
 
 const long RCN_NAVMESH_VERSION = 1;
 
