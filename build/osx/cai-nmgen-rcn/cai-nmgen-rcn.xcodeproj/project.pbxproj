@@ -195,7 +195,7 @@
 				TargetAttributes = {
 					A0AF27131E4E9A5B00AE36C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = M9TQL74WZT;
+						DevelopmentTeam = 2MU8W6W46N;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -350,7 +350,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = M9TQL74WZT;
+				DEVELOPMENT_TEAM = 2MU8W6W46N;
 				INFOPLIST_FILE = "cai-nmgen-rcn/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nmgen-rcn";
@@ -367,7 +367,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = M9TQL74WZT;
+				DEVELOPMENT_TEAM = 2MU8W6W46N;
 				INFOPLIST_FILE = "cai-nmgen-rcn/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.critterai.cai-nmgen-rcn";
