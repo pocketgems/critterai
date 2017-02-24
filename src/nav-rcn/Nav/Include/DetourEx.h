@@ -24,10 +24,14 @@
 
 #include "DetourNavMesh.h"
 
-#if _MSC_VER    // TRUE for Microsoft compiler.
-#define EXPORT_API __declspec(dllexport) // Required for VC++
+#ifdef _MSC_VER
+#define EXPORT_API __declspec(dllexport)
 #else
-#define EXPORT_API // Otherwise don't define.
+#if __GNUC__ >= 4
+#define EXPORT_API __attribute__ ((visibility("default")))
+#else
+#define EXPORT_API
+#endif
 #endif
 
 static const int MAX_RCN_PATH_CORRIDOR_SIZE = 256;
