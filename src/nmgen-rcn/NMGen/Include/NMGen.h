@@ -24,14 +24,10 @@
 
 #include "Recast.h"
 
-#ifdef _MSC_VER
-#define EXPORT_API __declspec(dllexport)
+#if _MSC_VER    // TRUE for Microsoft compiler.
+#define EXPORT_API __declspec(dllexport) // Required for VC++
 #else
-#if __GNUC__ >= 4
-#define EXPORT_API __attribute__ ((visibility("default")))
-#else
-#define EXPORT_API
-#endif
+#define EXPORT_API // Otherwise don't define.
 #endif
 
 static const float NMG_EPSILON = 0.00001f;

@@ -110,9 +110,11 @@ namespace org.critterai.nav.rcn
             , int agentIndex
             , NavmeshPoint position);
 
+        /*
 	    [DllImport(InteropUtil.PLATFORM_DLL)]
         public static extern bool dtcAdjustMoveTarget(IntPtr crowd
             , int agentIndex
             , NavmeshPoint position);
+        */
     }
 }

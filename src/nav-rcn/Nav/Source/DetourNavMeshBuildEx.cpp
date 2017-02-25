@@ -196,7 +196,7 @@ extern "C"
             pos += size;
         }
         
-        delete tileHeaders;
+        delete [] tileHeaders;
         tileHeaders = 0;
 
         *resultData = data;

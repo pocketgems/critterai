@@ -256,6 +256,7 @@ namespace org.critterai.nav
         /// </remarks>
         /// <param name="position">The new target position.</param>
         /// <returns>True if the adjustment was successful.</returns>
+        /*
         public bool AdjustMoveTarget(NavmeshPoint position)
         {
             if (IsDisposed)
@@ -265,6 +266,7 @@ namespace org.critterai.nav
                 , managerIndex
                 , position);
         }
+        */
 
         /// <summary>
         /// Gets the corridor data related to the agent.
