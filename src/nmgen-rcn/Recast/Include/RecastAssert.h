@@ -44,16 +44,12 @@ void rcAssertFailSetCustom(rcAssertFailFunc *assertFailFunc);
 rcAssertFailFunc* rcAssertFailGetCustom();
 
 #	include <assert.h> 
-/*
 #	define rcAssert(expression) \
 		{ \
 			rcAssertFailFunc* failFunc = rcAssertFailGetCustom(); \
 			if(failFunc == NULL) { assert(expression); } \
 			else if(!(expression)) { (*failFunc)(#expression, __FILE__, __LINE__); } \
 		}
-*/
-
-#	define rcAssert(expression) assert(expression)
 
 #endif
 

@@ -38,21 +38,18 @@ typedef void (dtAssertFailFunc)(const char* expression, const char* file, int li
 
 /// Sets the base custom assertion failure function to be used by Detour.
 ///  @param[in]		assertFailFunc	The function to be invoked in case of failure of #dtAssert
-//void dtAssertFailSetCustom(dtAssertFailFunc *assertFailFunc);
+void dtAssertFailSetCustom(dtAssertFailFunc *assertFailFunc);
 
 /// Gets the base custom assertion failure function to be used by Detour.
-//dtAssertFailFunc* dtAssertFailGetCustom();
+dtAssertFailFunc* dtAssertFailGetCustom();
 
 #	include <assert.h> 
-/*
 #	define dtAssert(expression) \
 		{ \
 			dtAssertFailFunc* failFunc = dtAssertFailGetCustom(); \
 			if(failFunc == NULL) { assert(expression); } \
 			else if(!(expression)) { (*failFunc)(#expression, __FILE__, __LINE__); } \
 		}
-*/
-#	define dtAssert(expression) assert(expression)
 
 #endif
 
