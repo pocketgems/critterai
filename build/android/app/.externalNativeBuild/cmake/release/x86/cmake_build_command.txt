@@ -1,0 +1,15 @@
+Executable : C:\Users\kangy_000\AppData\Local\Android\sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+-HC:\Users\kangy_000\Perforce\critterai\build\android\app
+-BC:\Users\kangy_000\Perforce\critterai\build\android\app\.externalNativeBuild\cmake\release\x86
+-DANDROID_ABI=x86
+-DANDROID_PLATFORM=android-19
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\kangy_000\Perforce\critterai\build\android\app\build\intermediates\cmake\release\obj\x86
+-DCMAKE_BUILD_TYPE=Release
+-DANDROID_NDK=C:\Users\kangy_000\AppData\Local\Android\sdk\ndk-bundle
+-DCMAKE_CXX_FLAGS=
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\kangy_000\AppData\Local\Android\sdk\ndk-bundle\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\kangy_000\AppData\Local\Android\sdk\cmake\3.6.4111459\bin\ninja.exe
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

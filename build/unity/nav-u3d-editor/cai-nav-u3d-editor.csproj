@@ -53,10 +53,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\nav-rcn\cai-nav-rcn.vcxproj">
-      <Project>{319D361B-147F-45AC-854E-50C06FCA3393}</Project>
-      <Name>cai-nav-rcn</Name>
-    </ProjectReference>
     <ProjectReference Include="..\nav-u3d\cai-nav-u3d.csproj">
       <Project>{D2154397-4098-4170-BBB0-58714D84E4C8}</Project>
       <Name>cai-nav-u3d</Name>

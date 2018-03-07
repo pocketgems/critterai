@@ -60,10 +60,6 @@
       <Project>{C4B32B85-13F0-42b8-AC89-770BEFEAF022}</Project>
       <Name>cai-util</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nmgen-rcn\cai-nmgen-rcn.vcxproj">
-      <Project>{B783B817-8746-4D54-A6CC-664C0A73186F}</Project>
-      <Name>cai-nmgen-rcn</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

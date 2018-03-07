@@ -1,0 +1,4 @@
+#Fri Feb 23 18:38:39 PST 2018
+base.0=C\:\\Users\\kangy_000\\Perforce\\critterai\\build\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

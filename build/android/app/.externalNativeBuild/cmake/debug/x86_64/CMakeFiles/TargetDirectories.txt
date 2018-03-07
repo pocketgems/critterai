@@ -1,0 +1,4 @@
+C:/Users/kangy_000/Perforce/critterai/build/android/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/cai-nmgen-rcn.dir
+C:/Users/kangy_000/Perforce/critterai/build/android/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/cai-nav-rcn.dir
+C:/Users/kangy_000/Perforce/critterai/build/android/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/kangy_000/Perforce/critterai/build/android/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir
