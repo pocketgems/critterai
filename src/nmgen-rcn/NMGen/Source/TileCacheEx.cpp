@@ -46,12 +46,14 @@ int rasterizeTileLayers(
 	const rcChunkyTriMesh *chunkyMesh,
 	bool filterLowHangingObstacles, bool filterLedgeSpans, bool filterWalkableLowHeightSpans,
 	const ConvexVolume* convexVolumes, int convexVolumeCount,
+	void *tcomp,
 	bool (*buildTileCacheLayer)(
 		int tx, int ty, int i,
 		const float *bmin, const float *bmax,
 		int width, int height, int minx, int maxx, int miny, int maxy, int hmin, int hmax,
 		const unsigned char *heights, const unsigned char *areas, const unsigned char *cons,
-		TileCacheData *tile))
+		TileCacheData *tile,
+		void *tcomp))
 {
 	rcContext *m_ctx = (rcContext *)pCtx;
 	/*
@@ -226,7 +228,8 @@ int rasterizeTileLayers(
 			layer->bmin, layer->bmax,
 			layer->width, layer->height, layer->minx, layer->maxx, layer->miny, layer->maxy, layer->hmin, layer->hmax,
 			layer->heights, layer->areas, layer->cons,
-			tile)) {
+			tile,
+			tcomp)) {
 			return 0;
 		}
 	}

@@ -27,7 +27,8 @@ bool buildTileCacheLayer(
 	const float *bmin, const float *bmax,
 	int width, int height, int minx, int maxx, int miny, int maxy, int hmin, int hmax,
 	const unsigned char *heights, const unsigned char *areas, const unsigned char *cons,
-	TileCacheData *tile) {
+	TileCacheData *tile,
+	void *tcomp) {
 	// Store header
 	dtTileCacheLayerHeader header;
 	header.magic = DT_TILECACHE_MAGIC;
@@ -50,8 +51,10 @@ bool buildTileCacheLayer(
 	header.hmin = (unsigned short)/*layer->*/hmin;
 	header.hmax = (unsigned short)/*layer->*/hmax;
 
-	dtTileCacheCompressor *comp; //TODO
-	dtStatus status = dtBuildTileCacheLayer(comp, &header, /*layer->*/heights, /*layer->*/areas, /*layer->*/cons,
+	dtStatus status = dtBuildTileCacheLayer(
+		(dtTileCacheCompressor *)tcomp,
+		&header,
+		/*layer->*/heights, /*layer->*/areas, /*layer->*/cons,
 		&tile->data, &tile->dataSize);
 	if (dtStatusFailed(status))
 	{
@@ -83,15 +86,17 @@ dtStatus handleBuild(
 		const rcConfig *cfg,
 		TileCacheData* tiles,
 		const int maxTiles,
-		const float *verts, const int nverts, const void* pChunkyMesh,
+		const float *verts, const int nverts, const rcChunkyTriMesh* chunkyMesh,
 		bool m_filterLowHangingObstacles, bool m_filterLedgeSpans, bool m_filterWalkableLowHeightSpans,
-		const void* pConvexVolumes, int convexVolumeCount,
+		const ConvexVolume* convexVolumes, int convexVolumeCount,
+		dtTileCacheCompressor *tcomp,
 		bool (*buildTileCacheLayer)(
 			int tx, int ty, int i,
 			const float *bmin, const float *bmax,
 			int width, int height, int minx, int maxx, int miny, int maxy, int hmin, int hmax,
 			const unsigned char *heights, const unsigned char *areas, const unsigned char *cons,
-			TileCacheData *tile)))
+			TileCacheData *tile,
+			void *tcomp)))
 {
 	dtStatus status;
 	/*
@@ -218,7 +223,7 @@ dtStatus handleBuild(
 		{
 			TileCacheData tiles[MAX_LAYERS];
 			memset(tiles, 0, sizeof(tiles));
-			int ntiles = rasterizeTileLayers(pCtx, x, y, &cfg, tiles, MAX_LAYERS, verts, nverts, chunkyMesh, filterLowHangingObstacles, filterLedgeSpans, filterWalkableLowHeightSpans, convexVolumes, convexVolumeCount, buildTileCacheLayer);
+			int ntiles = rasterizeTileLayers(pCtx, x, y, &cfg, tiles, MAX_LAYERS, verts, nverts, chunkyMesh, filterLowHangingObstacles, filterLedgeSpans, filterWalkableLowHeightSpans, convexVolumes, convexVolumeCount, tcomp, buildTileCacheLayer);
 
 			for (int i = 0; i < ntiles; ++i)
 			{

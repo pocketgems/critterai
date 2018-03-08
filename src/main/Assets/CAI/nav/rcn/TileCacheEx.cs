@@ -8,7 +8,7 @@ using Vector3 = UnityEngine.Vector3;
 
 namespace org.critterai.nav.rcn {
     [StructLayout(LayoutKind.Sequential)]
-    public struct ConvexVolume {
+    internal struct ConvexVolume {
         const int MAX_CONVEXVOL_PTS = 12;
 
         [MarshalAs(UnmanagedType.R4, SizeConst = MAX_CONVEXVOL_PTS * 3)]
@@ -24,9 +24,9 @@ namespace org.critterai.nav.rcn {
         public static extern NavStatus handleBuild(
             IntPtr contextRoot,
             [In] float[] verts, int nverts,
-            ChunkyTriMesh chunkyTriMesh,
+            ref ChunkyTriMesh chunkyTriMesh,
             bool filterLowHangingObstacles, bool filterLedgeSpans, bool filterWalkableLowHeightSpans,
-            ConvexVolume convexVolumes, int convexVolumeCount,
+            [In] ConvexVolume[] convexVolumes, int convexVolumeCount,
 	        ref Vector3 bmin, ref Vector3 bmax,
 	        float cellSize, float cellHeight,
 	        float tileSize,
@@ -48,9 +48,10 @@ namespace org.critterai.nav.rcn {
             IntPtr tiles,
             int maxTiles,
             [In] float[] verts, int nverts,
-            ChunkyTriMesh chunkyTriMesh,
+            ref ChunkyTriMesh chunkyTriMesh,
             bool filterLowHangingObstacles, bool filterLedgeSpans, bool filterWalkableLowHeightSpans,
-            ConvexVolume convexVolumes, int convexVolumeCount,
+            [In] ConvexVolume[] convexVolumes, int convexVolumeCount,
+            IntPtr tcomp,
             IntPtr buildTileCacheLayer);
     }
 }
