@@ -84,6 +84,18 @@
     <ClCompile Include="..\..\..\src\nav-rcn\DetourCrowd\Source\DetourProximityGrid.cpp">
       <Filter>DetourCrowdSource</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\nav-rcn\DetourTileCache\Source\DetourTileCache.cpp">
+      <Filter>DetourTileCacheSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nav-rcn\DetourTileCache\Source\DetourTileCacheBuilder.cpp">
+      <Filter>DetourTileCacheSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\DetourTileCacheEx.cpp">
+      <Filter>NavSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\ChunkyTriMesh.cpp">
+      <Filter>NavSource</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\nav-rcn\Nav\Include\DetourEx.h">
@@ -134,17 +146,14 @@
     <ClInclude Include="..\..\..\src\nav-rcn\DetourCrowd\Include\DetourProximityGrid.h">
       <Filter>DetourCrowdHeaders</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\src\nav-rcn\DetourTileCache\Source\DetourTileCache.cpp">
-      <Filter>DetourTileCacheSource</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\nav-rcn\DetourTileCache\Source\DetourTileCacheBuilder.cpp">
-      <Filter>DetourTileCacheSource</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\src\nav-rcn\DetourTileCache\Include\DetourTileCache.h">
       <Filter>DetourTileCacheHeaders</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\nav-rcn\DetourTileCache\Include\DetourTileCacheBuilder.h">
       <Filter>DetourTileCacheHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\nav-rcn\Nav\Include\ChunkyTriMesh.h">
+      <Filter>NavHeaders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

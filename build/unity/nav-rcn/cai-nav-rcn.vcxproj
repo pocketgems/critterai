@@ -174,15 +174,17 @@
     <ClCompile Include="..\..\..\src\nav-rcn\DetourCrowd\Source\DetourPathCorridor.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\DetourCrowd\Source\DetourPathQueue.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\DetourCrowd\Source\DetourProximityGrid.cpp" />
-    <ClInclude Include="..\..\..\src\nav-rcn\DetourTileCache\Source\DetourTileCache.cpp" />
-    <ClInclude Include="..\..\..\src\nav-rcn\DetourTileCache\Source\DetourTileCacheBuilder.cpp" />
+    <ClCompile Include="..\..\..\src\nav-rcn\DetourTileCache\Source\DetourTileCache.cpp" />
+    <ClCompile Include="..\..\..\src\nav-rcn\DetourTileCache\Source\DetourTileCacheBuilder.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\DetourCrowdEx.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\DetourNavMeshBuildEx.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\DetourNavmeshEx.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\DetourNavMeshQueryEx.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\DetourPathCorridorEx.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\DetourQueryFilterEx.cpp" />
+    <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\DetourTileCacheEx.cpp" />
     <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\NavValidation.cpp" />
+    <ClCompile Include="..\..\..\src\nav-rcn\Nav\Source\ChunkyTriMesh.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\nav-rcn\Detour\Include\DetourAlloc.h" />
@@ -203,6 +205,7 @@
     <ClInclude Include="..\..\..\src\nav-rcn\DetourTileCache\Include\DetourTileCacheBuilder.h" />
     <ClInclude Include="..\..\..\src\nav-rcn\Nav\Include\DetourEx.h" />
     <ClInclude Include="..\..\..\src\nav-rcn\Nav\Include\DetourNavMeshEx.h" />
+    <ClInclude Include="..\..\..\src\nav-rcn\Nav\Include\ChunkyTriMesh.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

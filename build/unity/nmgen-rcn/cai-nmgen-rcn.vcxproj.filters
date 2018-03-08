@@ -69,6 +69,12 @@
     <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\PolyMeshEx.cpp">
       <Filter>NMGenSource</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\TileCacheEx.cpp">
+      <Filter>NMGenSource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\ChunkyTriMesh.cpp">
+      <Filter>NMGenSource</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\nmgen-rcn\NMGen\Include\NMGen.h">
@@ -82,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\nmgen-rcn\Recast\Include\RecastAssert.h">
       <Filter>RecastHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\nmgen-rcn\NMGen\Include\ChunkyTriMesh.h">
+      <Filter>NMGenHeaders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

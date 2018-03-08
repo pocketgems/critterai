@@ -2,6 +2,7 @@
 #include "DetourTileCacheBuilder.h"
 #include "DetourNavMeshBuilder.h"
 #include "DetourNavMesh.h"
+#include "DetourNavMeshQuery.h"
 #include "DetourCommon.h"
 #include "DetourMath.h"
 #include "DetourAlloc.h"

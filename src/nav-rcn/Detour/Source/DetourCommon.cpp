@@ -386,3 +386,8 @@ bool dtIntersectSegSeg2D(const float* ap, const float* aq,
 	return true;
 }
 
+void dtCalcGridSize(const float* bmin, const float* bmax, float cs, int* w, int* h)
+{
+	*w = (int)((bmax[0] - bmin[0]) / cs + 0.5f);
+	*h = (int)((bmax[2] - bmin[2]) / cs + 0.5f);
+}

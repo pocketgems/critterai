@@ -168,8 +168,10 @@
     <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\HeightfieldEx.cpp" />
     <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\HeightfieldLayerSet.cpp" />
     <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\NMGen.cpp" />
+    <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\ChunkyTriMesh.cpp" />
     <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\PolyMeshDetailEx.cpp" />
     <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\PolyMeshEx.cpp" />
+    <ClCompile Include="..\..\..\src\nmgen-rcn\NMGen\Source\TileCacheEx.cpp" />
     <ClCompile Include="..\..\..\src\nmgen-rcn\Recast\Source\Recast.cpp" />
     <ClCompile Include="..\..\..\src\nmgen-rcn\Recast\Source\RecastAlloc.cpp" />
     <ClCompile Include="..\..\..\src\nmgen-rcn\Recast\Source\RecastArea.cpp" />
@@ -183,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\nmgen-rcn\NMGen\Include\NMGen.h" />
+    <ClInclude Include="..\..\..\src\nmgen-rcn\NMGen\Include\ChunkyTriMesh.h" />
     <ClInclude Include="..\..\..\src\nmgen-rcn\Recast\Include\Recast.h" />
     <ClInclude Include="..\..\..\src\nmgen-rcn\Recast\Include\RecastAlloc.h" />
     <ClInclude Include="..\..\..\src\nmgen-rcn\Recast\Include\RecastAssert.h" />

@@ -411,6 +411,8 @@ void dtCalcPolyCenter(float* tc, const unsigned short* idx, int nidx, const floa
 bool dtOverlapPolyPoly2D(const float* polya, const int npolya,
 						 const float* polyb, const int npolyb);
 
+void dtCalcGridSize(const float* bmin, const float* bmax, float cs, int* w, int* h);
+
 /// @}
 /// @name Miscellanious functions.
 /// @{
