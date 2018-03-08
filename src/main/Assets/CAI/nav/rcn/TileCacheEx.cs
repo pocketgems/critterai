@@ -39,5 +39,18 @@ namespace org.critterai.nav.rcn {
 	        IntPtr talloc, IntPtr tcomp, IntPtr tmproc,
 	        ref IntPtr pTileCache, ref IntPtr pNavMesh, ref IntPtr pNavQuery,
 	        IntPtr rasterizeTileLayers);
+
+        [DllImport(InteropUtil.PLATFORM_DLL)]
+        public static extern int rasterizeTileLayers(
+            IntPtr contextRoot,
+            int tx, int ty,
+            IntPtr cfg,
+            IntPtr tiles,
+            int maxTiles,
+            [In] float[] verts, int nverts,
+            ChunkyTriMesh chunkyTriMesh,
+            bool filterLowHangingObstacles, bool filterLedgeSpans, bool filterWalkableLowHeightSpans,
+            ConvexVolume convexVolumes, int convexVolumeCount,
+            IntPtr buildTileCacheLayer);
     }
 }

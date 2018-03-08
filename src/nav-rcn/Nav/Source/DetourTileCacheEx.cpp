@@ -80,7 +80,7 @@ dtStatus handleBuild(
 	dtStatus (*rasterizeTileLayers)(
 		void *pCtx,
 		const int tx, const int ty,
-		const rcConfig& cfg,
+		const rcConfig *cfg,
 		TileCacheData* tiles,
 		const int maxTiles,
 		const float *verts, const int nverts, const void* pChunkyMesh,
@@ -218,7 +218,7 @@ dtStatus handleBuild(
 		{
 			TileCacheData tiles[MAX_LAYERS];
 			memset(tiles, 0, sizeof(tiles));
-			int ntiles = rasterizeTileLayers(pCtx, x, y, cfg, tiles, MAX_LAYERS, verts, nverts, chunkyMesh, filterLowHangingObstacles, filterLedgeSpans, filterWalkableLowHeightSpans, convexVolumes, convexVolumeCount, buildTileCacheLayer);
+			int ntiles = rasterizeTileLayers(pCtx, x, y, &cfg, tiles, MAX_LAYERS, verts, nverts, chunkyMesh, filterLowHangingObstacles, filterLedgeSpans, filterWalkableLowHeightSpans, convexVolumes, convexVolumeCount, buildTileCacheLayer);
 
 			for (int i = 0; i < ntiles; ++i)
 			{

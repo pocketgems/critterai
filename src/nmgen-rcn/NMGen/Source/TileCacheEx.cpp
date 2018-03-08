@@ -39,12 +39,12 @@ struct RasterizationContext
 int rasterizeTileLayers(
 	void *pCtx,
 	const int tx, const int ty,
-	const rcConfig& cfg,
+	const rcConfig *cfg,
 	TileCacheData* tiles,
 	const int maxTiles,
 	const float *verts, const int nverts,
 	const rcChunkyTriMesh *chunkyMesh,
-	bool m_filterLowHangingObstacles, bool m_filterLedgeSpans, bool m_filterWalkableLowHeightSpans,
+	bool filterLowHangingObstacles, bool filterLedgeSpans, bool filterWalkableLowHeightSpans,
 	const ConvexVolume* convexVolumes, int convexVolumeCount,
 	bool (*buildTileCacheLayer)(
 		int tx, int ty, int i,
@@ -69,17 +69,17 @@ int rasterizeTileLayers(
 	//const rcChunkyTriMesh* chunkyMesh = m_geom->getChunkyMesh();
 
 	// Tile bounds.
-	const float tcs = cfg.tileSize * cfg.cs;
+	const float tcs = cfg->tileSize * cfg->cs;
 
 	rcConfig tcfg;
-	memcpy(&tcfg, &cfg, sizeof(tcfg));
+	memcpy(&tcfg, cfg, sizeof(tcfg));
 
-	tcfg.bmin[0] = cfg.bmin[0] + tx * tcs;
-	tcfg.bmin[1] = cfg.bmin[1];
-	tcfg.bmin[2] = cfg.bmin[2] + ty * tcs;
-	tcfg.bmax[0] = cfg.bmin[0] + (tx + 1)*tcs;
-	tcfg.bmax[1] = cfg.bmax[1];
-	tcfg.bmax[2] = cfg.bmin[2] + (ty + 1)*tcs;
+	tcfg.bmin[0] = cfg->bmin[0] + tx * tcs;
+	tcfg.bmin[1] = cfg->bmin[1];
+	tcfg.bmin[2] = cfg->bmin[2] + ty * tcs;
+	tcfg.bmax[0] = cfg->bmin[0] + (tx + 1)*tcs;
+	tcfg.bmax[1] = cfg->bmax[1];
+	tcfg.bmax[2] = cfg->bmin[2] + (ty + 1)*tcs;
 	tcfg.bmin[0] -= tcfg.borderSize*tcfg.cs;
 	tcfg.bmin[2] -= tcfg.borderSize*tcfg.cs;
 	tcfg.bmax[0] += tcfg.borderSize*tcfg.cs;
@@ -137,11 +137,11 @@ int rasterizeTileLayers(
 	// Once all geometry is rasterized, we do initial pass of filtering to
 	// remove unwanted overhangs caused by the conservative rasterization
 	// as well as filter spans where the character cannot possibly stand.
-	if (m_filterLowHangingObstacles)
+	if (filterLowHangingObstacles)
 		rcFilterLowHangingWalkableObstacles(m_ctx, tcfg.walkableClimb, *rc.solid);
-	if (m_filterLedgeSpans)
+	if (filterLedgeSpans)
 		rcFilterLedgeSpans(m_ctx, tcfg.walkableHeight, tcfg.walkableClimb, *rc.solid);
-	if (m_filterWalkableLowHeightSpans)
+	if (filterWalkableLowHeightSpans)
 		rcFilterWalkableLowHeightSpans(m_ctx, tcfg.walkableHeight, *rc.solid);
 
 
