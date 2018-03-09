@@ -57,6 +57,7 @@ namespace org.critterai.nmgen
         private const int MessagePoolSize = 65536;
 
         internal IntPtr root = IntPtr.Zero;
+        public IntPtr Root { get { return root; } }
 
         /// <summary>
         /// The number of messages in the buffer. [Limit: &lt;= 1000]

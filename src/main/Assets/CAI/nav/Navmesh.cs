@@ -125,7 +125,7 @@ namespace org.critterai.nav
         /// </summary>
         internal IntPtr root;
 
-        private Navmesh(IntPtr mesh)
+        internal Navmesh(IntPtr mesh)
             : base(AllocType.External)
         {
             root = mesh;
@@ -539,7 +539,7 @@ namespace org.critterai.nav
 
             return status;
         }
-
+        
         /// <summary>
         /// Creates a navigation mesh from data obtained from the <see cref="GetSerializedMesh"/> 
         /// method.
