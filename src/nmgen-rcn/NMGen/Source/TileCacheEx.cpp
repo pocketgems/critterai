@@ -38,22 +38,18 @@ struct RasterizationContext
 
 int rasterizeTileLayers(
 	void *pCtx,
-	const int tx, const int ty,
-	const rcConfig *cfg,
-	TileCacheData* tiles,
-	const int maxTiles,
-	const float *verts, const int nverts,
-	const rcChunkyTriMesh *chunkyMesh,
+	int tx, int ty,
+	rcConfig *cfg,
+	TileCacheData* tiles, int maxTiles,
+	float *verts, int nverts,
+	rcChunkyTriMesh *chunkyMesh,
 	bool filterLowHangingObstacles, bool filterLedgeSpans, bool filterWalkableLowHeightSpans,
-	const ConvexVolume* convexVolumes, int convexVolumeCount,
-	void *tcomp,
 	bool (*buildTileCacheLayer)(
 		int tx, int ty, int i,
 		const float *bmin, const float *bmax,
 		int width, int height, int minx, int maxx, int miny, int maxy, int hmin, int hmax,
-		const unsigned char *heights, const unsigned char *areas, const unsigned char *cons,
-		TileCacheData *tile,
-		void *tcomp))
+		unsigned char *heights, unsigned char *areas, unsigned char *cons,
+		TileCacheData *tile))
 {
 	rcContext *m_ctx = (rcContext *)pCtx;
 	/*
@@ -165,17 +161,16 @@ int rasterizeTileLayers(
 		m_ctx->log(RC_LOG_ERROR, "buildNavigation: Could not erode.");
 		return 0;
 	}
-
+	/*
 	// (Optional) Mark areas.
-	//const ConvexVolume* vols = m_geom->getConvexVolumes();
-	const ConvexVolume *vols = (ConvexVolume *)convexVolumes;
-	for (int i = 0; i < /*m_geom->getConvexVolumeCount()*/convexVolumeCount; ++i)
+	const ConvexVolume* vols = m_geom->getConvexVolumes();
+	for (int i  = 0; i < m_geom->getConvexVolumeCount(); ++i)
 	{
 		rcMarkConvexPolyArea(m_ctx, vols[i].verts, vols[i].nverts,
-			vols[i].hmin, vols[i].hmax,
-			(unsigned char)vols[i].area, *rc.chf);
+							 vols[i].hmin, vols[i].hmax,
+							 (unsigned char)vols[i].area, *rc.chf);
 	}
-
+	*/
 	rc.lset = rcAllocHeightfieldLayerSet();
 	if (!rc.lset)
 	{
@@ -228,8 +223,7 @@ int rasterizeTileLayers(
 			layer->bmin, layer->bmax,
 			layer->width, layer->height, layer->minx, layer->maxx, layer->miny, layer->maxy, layer->hmin, layer->hmax,
 			layer->heights, layer->areas, layer->cons,
-			tile,
-			tcomp)) {
+			tile)) {
 			return 0;
 		}
 	}
@@ -244,4 +238,8 @@ int rasterizeTileLayers(
 	}
 
 	return n;
+}
+
+void *getRasterizeTileLayers() {
+	return rasterizeTileLayers;
 }

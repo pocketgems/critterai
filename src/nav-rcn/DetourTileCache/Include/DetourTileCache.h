@@ -98,15 +98,6 @@ struct dtTileCacheParams
 	int maxObstacles;
 };
 
-static const int MAX_CONVEXVOL_PTS = 12;
-struct ConvexVolume
-{
-	float verts[MAX_CONVEXVOL_PTS * 3];
-	float hmin, hmax;
-	int nverts;
-	int area;
-};
-
 /// Specifies a configuration to use when performing Recast builds.
 /// @ingroup recast
 struct rcConfig
